@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Park Website</title>
+    <link rel="icon" type="image/x-icon" href="/Images/main-web-logo2.png">
+    <link rel="stylesheet" href="/CSS/home.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Remixicon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="/Images/bg-video-4-park.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><img src="/Images/main-logo-web.png"></label>
+        <ul>
+            <li><a href="/HTML/home.html" class="active">Home</a></li>
+            <li><a href="/HTML/about.html">About</a></li>
+            <li><a href="/HTML/plan-your-trip.html">Plan Your Trip</a></li>
+            <li><a href="/HTML/activities-to-go.html">Activities</a></li>
+            <li><a href="/HTML/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="main-content">
+        <div class="header-content" data-aos="fade-up">
+            <h1>National <span>Parks</span> Of <span>Pakistan</span></h1>
+            <p>The unique characteristics of the climate and natural landscape of Pakistan make it a wildlife-rich
+                country. It is home to plenty of natural habitats for both migratory birds and local animal species.
+                However, the increasing level of human activities can easily hamper biodiversity and ecosystems in these
+                natural settings. </p>
+            <div class="btn">
+                <button class="btn1" onclick="nextpage14()">Explore Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Section 2-->
+    <div class="header-content1">
+        <div class="main-content1" data-aos="zoom-in-down">
+            <div class="sub-content">
+                <h1 class="head1"><span style="color: #FDBA00;">Organizational</span> of the National Park <span
+                        style="color: #FDBA00;"> Service</span> Of <span style="color: #FDBA00;">Pakistan</span></h1>
+                <p class="para1">As of my last knowledge update in January 2022, there might not be a specific
+                    National Park Service in Pakistan similar to the National Park Service in the United States.
+                    However, Pakistan does have a system of national parks and protected areas managed by various
+                    government agencies, including the Pakistan Environmental Protection Agency (Pak-EPA), provincial
+                    wildlife departments, and forest departments.
+
+                    Please note that organizational structures and government agencies can change, and it's advisable to
+                    check the latest information for the most accurate details. Below is a hypothetical organizational
+                    structure for a National Park Service in Pakistan.
+                </p>
+            </div>
+            <div class="sub-content">
+                <img src="/Images/header-image4.jpg">
+            </div>
+        </div>
+    </div>
+
+    <!-- National Parks in All Pakistan -->
+    <h1 class="head2">Major <span style="color: #FDBA00;">National</span> Parks Of <span
+            style="color: #FDBA00;">Pakistan</span></h1>
+    <div id="header-content3">
+        <div class="main-card" data-aos="zoom-in-right">
+            <div class="div-card">
+                <img src="/Images/Hingol-National-Park1.jpg">
+                <h2>Hingol-<span style="color: #FDBA00;">National</span>-Park</h2>
+                <p class="para2">View more National Parks Full Details</p>
+                <button class="btn2" onclick="nextpage()">View More</button>
+                <div class="social-icons">
+                    <div class="icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="ri-twitter-fill"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-fill"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="div-card">
+                <img src="/Images/Hazarganji Chiltan National Park.jpg">
+                <h2>Hazarganji-<span style="color: #FDBA00;">National</span>-Park</h2>
+                <p class="para2">View more National Parks Full Details</p>
+                <button class="btn2" onclick="nextpage1()">View More</button>
+                <div class="social-icons">
+                    <div class="icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="ri-twitter-fill"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-fill"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="div-card">
+                <img src="/Images/Kirthar National Park.jpg">
+                <h2>Kirthar-<span style="color: #FDBA00;">National</span>-Park</h2>
+                <p class="para2">View more National Parks Full Details</p>
+                <button class="btn2" onclick="nextpage2()">View More</button>
+                <div class="social-icons">
+                    <div class="icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="ri-twitter-fill"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-fill"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="div-card">
+                <img src="/Images/Ayubia National Park.jpg">
+                <h2>Ayubia-<span style="color: #FDBA00;">National</span>-Park</h2>
+                <p class="para2">View more National Parks Full Details</p>
+                <button class="btn2" onclick="nextpage3()">View More</button>
+                <div class="social-icons">
+                    <div class="icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="ri-twitter-fill"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-fill"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="div-card">
+                <img src="/Images/habitat-header.jpg">
+                <h2>Chitta-<span style="color: #FDBA00;">National</span>-Park</h2>
+                <p class="para2">View more National Parks Full Details</p>
+                <button class="btn2" onclick="nextpage4()">View More</button>
+                <div class="social-icons">
+                    <div class="icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="ri-twitter-fill"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-fill"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="div-card">
+                <img src="/Images/Khunjerab National Park.jpg">
+                <h2>Khunjerab-<span style="color: #FDBA00;">National</span>-Park</h2>
+                <p class="para2">View more National Parks Full Details</p>
+                <button class="btn2" onclick="nextpage5()">View More</button>
+                <div class="social-icons">
+                    <div class="icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="ri-twitter-fill"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-fill"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Explore Our Latest Vehicles -->
+    <h1 class="head3"><span style="color: #FDBA00;">Explore</span> Our <span style="color: #FDBA00;">Latest</span>
+        Vehicles</h1>
+    <div id="explore">
+        <div id="header-content4">
+            <div class="main-content2"  data-aos="zoom-in">
+                <!-- Latest Vehicles Card 1 -->
+                <div class="cards">
+                    <img src="/Images/van-images.jpg">
+                    <h3>Van - Classic Plus (7 seater)</h3>
+                    <hr>
+                    <div class="price">
+                        <div class="price-content">
+                            <p class="para3">Price per day</p>
+                        </div>
+                        <div class="price-content">
+                            <h2 class="head4">US$ 80</h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Details-Content-Section-Start -->
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">car type</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">Vans/Buses</h4>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">max people</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">7</h4>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">Door count</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">3</h4>
+                        </div>
+                    </div>
+
+                    <!-- Details-Content-Section-End -->
+                    <hr>
+                    <button class="btn3" onclick="nextpage6()">BOOK NOW</button>
+                </div>
+                <!-- Latest Vehicles Card 2 -->
+                <div class="cards">
+                    <img src="/Images/Prado-Classic-image.jpg">
+                    <h3>Prado Classic Plus</h3>
+                    <hr>
+                    <div class="price">
+                        <div class="price-content">
+                            <p class="para3">Price per day</p>
+                        </div>
+                        <div class="price-content">
+                            <h2 class="head4">US$ 75</h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Details-Content-Section-Start -->
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">car type</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">Prado/SUVs</h4>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">max people</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">6</h4>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">Door count</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">5</h4>
+                        </div>
+                    </div>
+                    <!-- Details-Content-Section-End -->
+                    <hr>
+                    <button class="btn3" onclick="nextpage7()">BOOK NOW</button>
+                </div>
+
+                <!-- Latest Vehicle Card 3-->
+                <div class="cards">
+                    <img src="/Images/Luxury Bus-image.jpg">
+                    <h3>Luxury Bus</h3>
+                    <hr>
+                    <div class="price">
+                        <div class="price-content">
+                            <p class="para3">Price per day</p>
+                        </div>
+                        <div class="price-content">
+                            <h2 class="head4">US$ 260</h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Details-Content-Section-Start -->
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">car type</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">Vans/Buses</h4>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">max people</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">32</h4>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">Door count</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">2</h4>
+                        </div>
+                    </div>
+
+                    <!-- Details-Content-Section-End -->
+                    <hr>
+                    <button class="btn3" onclick="nextpage8()">BOOK NOW</button>
+                </div>
+
+                <!-- Latest Vehicles 4 -->
+                <div class="cards">
+                    <img src="/Images/Prado-Classic-image2.jpg">
+                    <h3>Prado Classic (3 door)</h3>
+                    <hr>
+                    <div class="price">
+                        <div class="price-content">
+                            <p class="para3">Price per day</p>
+                        </div>
+                        <div class="price-content">
+                            <h2 class="head4">US$ 50</h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Details-Content-Section-Start -->
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">car type</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">Prado/SUVs</h4>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">max people</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">4</h4>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">Door count</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">3</h4>
+                        </div>
+                    </div>
+                    <!-- Details-Content-Section-End -->
+                    <hr>
+                    <button class="btn3" onclick="nextpage9()">BOOK NOW</button>
+                </div>
+                <div class="cards">
+                    <img src="/Images/prado-image.jpeg">
+                    <h3>Prado Classic (5 door)</h3>
+                    <hr>
+                    <div class="price">
+                        <div class="price-content">
+                            <p class="para3">Price per day</p>
+                        </div>
+                        <div class="price-content">
+                            <h2 class="head4">US$ 60</h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Details-Content-Section-Start -->
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">car type</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">Prado/SUVs</h4>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">max people</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">5</h4>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">Door count</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">5</h4>
+                        </div>
+                    </div>
+                    <!-- Details-Content-Section-End -->
+                    <hr>
+                    <button class="btn3" onclick="nextpage10()">BOOK NOW</button>
+                </div>
+                <div class="cards">
+                    <img src="/Images/Prado-(2010)-image.jpg">
+                    <h3>Prado (2010)</h3>
+                    <hr>
+                    <div class="price">
+                        <div class="price-content">
+                            <p class="para3">Price per day</p>
+                        </div>
+                        <div class="price-content">
+                            <h2 class="head4">US$ 130</h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Details-Content-Section-Start -->
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">car type</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">Prado/SUVs</h4>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">max people</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">4</h4>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">Door count</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">5</h4>
+                        </div>
+                    </div>
+
+                    <!-- Details-Content-Section-End -->
+                    <hr>
+                    <button class="btn3" onclick="nextpage11()">BOOK NOW</button>
+                </div>
+                <div class="cards">
+                    <img src="/Images/Nationl-park-Jeep-image.jpg">
+                    <h3>National Park Jeep</h3>
+                    <hr>
+                    <div class="price">
+                        <div class="price-content">
+                            <p class="para3">Price per day</p>
+                        </div>
+                        <div class="price-content">
+                            <h2 class="head4">US$ 60</h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Details-Content-Section-Start -->
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">car type</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">Jeeps</h4>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">max people</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">8</h4>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">Door count</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">2</h4>
+                        </div>
+                    </div>
+
+        
+                    <!-- Details-Content-Section-End -->
+                    <hr>
+                    <button class="btn3" onclick="nextpage12()">BOOK NOW</button>
+                </div>
+                <div class="cards">
+                    <img src="/Images/Van - Premium (10 seater)-image.jpg">
+                    <h3>Van - Premium (10 seater)</h3>
+                    <hr>
+                    <div class="price">
+                        <div class="price-content">
+                            <p class="para3">Price per day</p>
+                        </div>
+                        <div class="price-content">
+                            <h2 class="head4">US$ 85</h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Details-Content-Section-Start -->
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">car type</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">Vans/Buses</h4>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">max people</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">10</h4>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div class="details-content">
+                            <p class="para4">Door count</p>
+                        </div>
+                        <div class="details-content">
+                            <h4 class="head5">3</h4>
+                        </div>
+                    </div>
+
+                    
+                    <!-- Details-Content-Section-End -->
+                    <hr>
+                    <button class="btn3" onclick="nextpage13()">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- data-aos="fade-right" -->
+    <!-- Description Cards -->
+    <h1 class="head6"><span style="color: #FDBA00;">Description</span> Park Details</h1>
+    <div class="header-content5">
+        <div class="main-content3" data-aos="fade-up">
+            <div class="cards-details">
+                <h3 class="head7">Famous National Park</h3>
+                <hr>
+                <p class="para5">Nestled in the majestic embrace of the Karakoram Range, Khunjerab National Park stands
+                    as a testament to Pakistan's rich natural heritage. This pristine sanctuary, established in 1975, is
+                    a jewel in the crown of the country's protected areas, offering a captivating blend.</p>
+            </div>
+            <div class="cards-details">
+                <h3 class="head7">Details-Descriptions</h3>
+                <hr>
+                <p class="para5">Pakistan is home to a diverse array of ecosystems and landscapes, and its national
+                    parks showcase the country's rich biodiversity, stunning natural beauty, and unique geographical
+                    features.</p>
+            </div>
+            <div class="cards-details">
+                <h3 class="head7">Exclusive Knowledge</h3>
+                <hr>
+                <p class="para5">It's advisable to check for the latest information and any developments in the national
+                    park system in Pakistan, as conservation efforts and park management may have evolved since my last
+                    update.</p>
+            </div>
+            <div class="cards-details">
+                <h3 class="head7">Passionate Service</h3>
+                <hr>
+                <p class="para5">In the southwestern corner of Pakistan, Hingol National Park unfolds like a surreal
+                    dream where the arid desert meets the Arabian Sea. The park's diverse terrain hosts the mystical Mud
+                    Volcano, the hauntingly beautiful Princess of Hope rock formation.</p>
+            </div>
+            <div class="cards-details">
+                <h3 class="head7">Best Price Guarantee</h3>
+                <hr>
+                <p class="para5">If, within 24 hours of booking, you find a lower publicly available rate for the same
+                    accommodation, date, and room type on another website, contact our customer support team
+                    immediately.</p>
+            </div>
+            <div class="cards-details">
+                <h3 class="head7">Secure Booking</h3>
+                <hr>
+                <p class="para5">Creating a secure booking system for Pakistan national parks involves implementing
+                    robust security measures to protect user information, ensuring data integrity, and maintaining the
+                    confidentiality of sensitive data.</p>
+            </div>
+            <div class="cards-details">
+                <h3 class="head7">Benefits for Partners</h3>
+                <hr>
+                <p class="para5">Partners of Pakistan National Parks gain significant visibility and recognition through
+                    association with these protected areas. This enhances the partners' brand image and fosters positive
+                    public perception.</p>
+            </div>
+            <div class="cards-details">
+                <h3 class="head7">Any Questions?</h3>
+                <hr>
+                <p class="para5">Call us on +92-316-6681-356 for individual, tailored advice for your perfect stay or
+                    send us a message with your National Park booking query.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <div class="header-content6">
+        <div class="footer-Section">
+            <marquee>PAKISTAN - NATIONAL - PARK - FOOTER</marquee>
+            <div class="footer">
+                <h3 class="head8">Get latest tour updates</h3>
+                <label>Email address:</label>
+                <input type="email" placeholder="Your email address">
+                <button class="btn4">SIGN UP</button>
+            </div>
+            <div class="footer">
+                <h3 class="head8">More Information</h3>
+                <div class="info">
+                    <a href="/HTML/home.html">Home</a><br>
+                    <a href="/HTML/about.html">About</a><br>
+                    <a href="/HTML/plan-your-trip.html">Plan Your Trip</a><br>
+                    <a href="/HTML/activities-to-go.html">Activities</a><br>
+                    <a href="/HTML/contact.html">Contact</a><br>
+                </div>
+            </div>
+            <div class="footer">
+                <h3 class="head8">We Are Social!</h3>
+                <div class="Footer-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="ri-twitter-fill"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-fill"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                </div>
+            </div>
+            <div class="footer">
+                <h3 class="head8">Parks Ticket PVT</h3>
+                <p class="para6">
+                    Head Office: [Your Address]<br>
+                    Phone: [Your Contact Number]<br>
+                    Email: [Your Email Address]<br>
+                    Website: [Your Website]<br>
+                    Ticket No: [Ticket Number]<br>
+                    Date: [Date of Issue]<br>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-copy">
+            <hr style="margin-top: 20px;">
+            <p class="para7">
+                © National-Park.pk 2013-2024. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="/Js/home.js"></script>
+
+    <!-- Our AOS Data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 1500,
+        });
+    </script>
+
+
+</body>
+
+</html>

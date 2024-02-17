@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Registration-Form</title>
+   <!-- CSS -->
+   <link rel="stylesheet" href="/CSS/registration-form.css">
+   <!-- iconscout CSS -->
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+   <div class="container" data-aos="fade-down">
+      <header>Registration</header>
+      <form action="#">
+         <div class="form first">
+            <div class="details personal">
+               <span class="title">Personal Details</span>
+
+               <div class="fields">
+                  <div class="input-field">
+                     <label>Full Name</label>
+                     <input type="text" placeholder="Enter Your Name" required>
+                  </div>
+
+                  <div class="input-field">
+                     <label>Date of Birth</label>
+                     <input type="date" placeholder="Enter birth date" required>
+                  </div>
+
+                  <div class="input-field">
+                     <label>Email</label>
+                     <input type="email" placeholder="Enter Your email" required>
+                  </div>
+
+                  <!--  -->
+                  <div class="input-field">
+                     <label>Mobile Number</label>
+                     <input type="number" placeholder="Enter Mobile Number" required>
+                  </div>
+
+                  <div class="input-field">
+                     <label>Gender</label>
+                     <input type="text" placeholder="Enter Your Gender" required>
+                  </div>
+
+                  <div class="input-field">
+                     <label>Occupation</label>
+                     <input type="text" placeholder="Enter Your Occupation" required>
+                  </div>
+               </div>
+            </div>
+
+            <!--  -->
+            <div class="details ID">
+               <span class="title">Identity Details</span>
+
+               <div class="fields">
+                  <div class="input-field">
+                     <label>ID Type</label>
+                     <input type="text" placeholder="Enter ID Type" required>
+                  </div>
+
+                  <div class="input-field">
+                     <label>ID Number</label>
+                     <input type="number" placeholder="Enter ID Number" required>
+                  </div>
+
+                  <div class="input-field">
+                     <label>Issued Authority</label>
+                     <input type="text" placeholder="Enter issued Authority" required>
+                  </div>
+
+                  <!--  -->
+                  <div class="input-field">
+                     <label>Issued State</label>
+                     <input type="text" placeholder="Enter issued state" required>
+                  </div>
+
+                  <div class="input-field">
+                     <label>Issued Date</label>
+                     <input type="text" placeholder="Enter issued date" required>
+                  </div>
+
+                  <div class="input-field">
+                     <label>Expiry Date</label>
+                     <input type="date" placeholder="Enter Expiry Date" required>
+                  </div>
+               </div>
+
+               <button class="nextBtn">
+                  <span class="btnText">Next</span>
+                  <i class="uil uil-navigator"></i>
+               </button>
+            </div>
+         </div>
+
+         <!-- Second Form -->
+         <div class="form second">
+            <div class="details address">
+               <span class="title">Family Details</span>
+
+               <div class="fields">
+                  <div class="input-field">
+                     <label>Contact Name</label>
+                     <input type="text" placeholder="First" required>
+                  </div>
+
+                  <div class="input-field">
+                     <label>Last Name</label>
+                     <input type="text" placeholder="Last" required>
+                  </div>
+
+                  <div class="input-field">
+                     <label>E-mail Address</label>
+                     <input type="email" placeholder="Email" required>
+                  </div>
+
+                  <!--  -->
+                  <div class="input-field">
+                     <label>Place Name</label>
+                     <input type="text" placeholder="Comp Name" required>
+                  </div>
+
+                  <div class="input-field">
+                     <label>Business Number</label>
+                     <input type="number" placeholder="Buss Number" required>
+                  </div>
+
+                  <div class="input-field">
+                     <label>Primary Number</label>
+                     <input type="number" placeholder="Prim Number" required>
+                  </div>
+               </div>
+            </div>
+
+            <!--  -->
+            <div class="details family">
+               <span class="title">Address Details</span>
+
+               <div class="fields">
+                  <div class="input-field">
+                     <label>Address</label>
+                     <input type="text" placeholder="Street Address" required>
+                  </div>
+
+                  <div class="input-field">
+                     <label>Address Line 2</label>
+                     <input type="text" placeholder="Street Address Line 2" required>
+                  </div>
+
+                  <div class="input-field">
+                     <label>City</label>
+                     <input type="text" placeholder="City" required>
+                  </div>
+
+                  <!--  -->
+                  <div class="input-field">
+                     <label>Region</label>
+                     <input type="text" placeholder="Region" required>
+                  </div>
+
+                  <div class="input-field">
+                     <label>Postal / Zip Code</label>
+                     <input type="text" placeholder="Zip Code" required>
+                  </div>
+
+                  <div class="input-field">
+                     <label>Romania</label>
+                     <input type="text" placeholder="Romania" required>
+                  </div>
+               </div>
+
+               <div class="buttons">
+                  <div class="backBtn">
+                     <i class="uil uil-navigator"></i>
+                     <a href="plan-your-trip.html#book">Cancel</a>
+                  </div>
+
+                  <button class="submit">
+                     <span class="submit">Submit</span>
+                     <i class="uil uil-navigator"></i>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </form>
+   </div>
+
+   <script>
+      const form = document.querySelector("form"),
+         nextBtn = form.querySelector(".nextBtn"),
+         backBtn = form.querySelector(".backBtn"),
+         allInput = form.querySelector(".first input");
+
+      nextBtn.addEventListener("click", () => {
+         allInput.forEach(input => {
+            if (input.value != "") {
+               form.classList.add('secActive');
+            }
+            else {
+               form.classList.remove('secActive');
+               alert("Input is empty")
+            }
+         })
+      })
+
+      backBtn.addEventListener("click", () => form.classList.remove('secActive'));
+   </script>
+
+<script>
+   AOS.init();
+ </script>
+
+
+</body>
+
+</html>
